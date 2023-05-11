@@ -2,7 +2,7 @@
    All data will be save in local user data then push into json file
    By Farley == No Copyright
 """
-import os, random
+import os, random,math
 
 def generate_eqn():
     """this function will generate random equation
@@ -45,6 +45,8 @@ def generate_eqn():
             return(ran_choice,question,ans)
         elif delta > 0:
             """case delta greater than zero then the equation have two answer"""
+            ans = [((-b + math.sqrt(delta)) / 2*a), ((-b + math.sqrt(delta)) / 2*a)]
+            return(ran_choice,question,ans)
 
     
     
